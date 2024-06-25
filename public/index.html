@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Quez App</title>
+  </head>
+  <body>
+    <div class="container bg-slate-100 min-h-screen flex">
+      <div
+        class="all flex flex-col bg-slate-200 align-middle p-10 w-fit mx-auto h-fit my-20 rounded-md"
+      >
+        <h1 class="text-black font-bold text-3xl text-center mb-5">Quez App</h1>
+        <hr class="text-white" />
+        <div class="question">
+          <h3
+            id="question-text"
+            class="question-text text-slate-900 font-serif font-bold text-xl"
+          >
+            Question
+          </h3>
+        </div>
+        <div class="answer bg-slate-400 p-3 rounded my-3 w-3/4 mx-auto">
+          <ul class="answer-list flex flex-col gap-3">
+            <li><button>A. Answer</button></li>
+            <li><button>B. Answer</button></li>
+            <li><button>C. Answer</button></li>
+            <li><button>D. Answer</button></li>
+          </ul>
+          <div id="score-container"></div>
+        </div>
+        <div class="next-btn">
+          <button id="next-btn" class="btn bg-slate-900">next</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
